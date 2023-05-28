@@ -16,6 +16,8 @@
     <!-- OWL CAROUSEL  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />css">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- MAIN CSS  -->
 <link rel="stylesheet" href="./style.css">
 </head>
@@ -270,19 +272,125 @@
   </div>
 </section>
 <!-- NEWS  -->
-<section class="news">
+<section class="news my-4">
   <div class="container">
-    <div class="news_title">
-      <p>LATEST NEWS</p>
-      <h3>Our insight and articles</h3>
+    <div class="news_title my-5">
+      <p class="text-secondary text-center">LATEST NEWS</p>
+      <h3 class="main_title text-center">Our insight and articles</h3>
+    </div>
+    <div class="news_content">
+      <div class="new_item card" style="width: 32%;">
+        <a href="#">
+          <div class="card_top">
+            <img src="./img/blog1.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="text-secondary">Startup Business</p>
+            <h4>Hello World!</h4>
+          </div>
+          <div class="card_footer py-2">
+            <p class="text-end pe-4 text-secondary">April 1, 2021</p>
+          </div>
+        </a>
+      </div>
+      <div class="new_item card" style="width: 32%;">
+        <a href="#">
+          <div class="card_top">
+            <img src="./img/blog2.jpg" class="card-img-top" alt="">
+          </div>
+          <div class="card-body">
+            <p class="text-secondary">Startup Business</p>
+            <h4>Companies in NY launched a joint project on a three-tower hall </h4>
+          </div>
+          <div class="card_footer py-2">
+            <p class="text-end pe-4 text-secondary">April 1, 2021</p>
+          </div>
+        </a>
+      </div>
+      <div class="new_item card" style="width: 32%;">
+        <a href="#">
+          <div class="card_top">
+          <img src="./img/blog3.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <p class="text-secondary">Marketing Strategy</p>
+          <h4>Design breakthrough upgrades the product and ready to launch</h4>
+        </div>
+        <div class="card_footer py-2">
+          <p class="text-end pe-4 text-secondary">April 1, 2021</p>
+        </div>
+       </a>   
+     </div>
     </div>
   </div>
 </section>
   </main>
-  <footer>
-    <!-- place footer here -->
-    <!-- CONTACT  -->
-<section class="contact"></section>
+  <footer class="mt-5">
+      <div class="footer_header text-center">
+        <div class="container">
+          <div class="footer_header_title">
+            <h2 class="text-light fw-bold">Let’s find out how to work together</h2>
+            <p class="text-secondary">Lorem ipsum dolor sit amet <br> elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
+          </div>
+          <form class="footer_header_form mt-5">
+            <i class="fa-solid fa-paper-plane"></i>
+            <input type="text" placeholder="Your Email Address">
+            <button>Subscribe</button>
+          </form>
+        </div>
+      </div>
+    <div class="footer_body">
+      <div class="container">
+        <div class="footer_body_content my-5">
+          <div class="footer_item col-lg-4 col-md-6 px-3">
+            <div class="footer_logo my-4">
+              <a href="#">
+                <i class="fa-solid fa-align-right"></i>
+                Corp Vision <span>Vision to your Future</span>
+              </a>
+            </div>
+            <div class="footer_content text-secondary">
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at <br> tempufddfel. Lorem ipsum dolor sit amet Semper at <br> elit team advisors.
+            </div>
+            <div class="footer_body_icon py-4">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer_item col-lg-4 col-md-6 ps-5 ">
+            <h6 class="my-4">CONTACT INFO</h6>
+            <p class="text-secondary">Address : Corp Vision, 343 marketing, #21 <br> cravel 1st lane street, NY - 62617.</p>
+            <p class="text-secondary">Phone Number: <a href="tel:+1(21) 234 4567"> +1(21) 234 4567</a></p>
+            <p class="text-secondary">Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p class="text-secondary"> Support <a href="mailto:info@support.com">info@support.com</a></p>
+          </div>
+          <div class="footer_item col-lg-2 col-md-6 col-sm-5 col-6">
+            <h6 class="my-4">CATEGORIES</h6>
+            <ul>
+              <li><a href="#">Marketing Strategy</a></li>
+              <li><a href="#">Startup Business</a></li>
+              <li><a href="#">Web development</a></li>
+            </ul>
+          </div>
+          <div class="footer_item col-lg-2 col-md-6 col-sm-5 col-6">
+            <h6 class="my-4">META</h6>
+            <ul>
+              <li><a href="#">Log in</a></li>
+              <li><a href="#">Entries feed</a></li>
+              <li><a href="#">Comments feed</a></li>
+              <li><a href="#">WordPress.org</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_copyright py-3">
+    <div class="container">
+      <p class="text-secondary text-center">© 2023 Corp Vision All Rights Reserved | WordPres Theme by <a href="#">Cybersoft</a></p>
+    </div>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
