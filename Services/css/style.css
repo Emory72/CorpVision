@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Jost', sans-serif;
+}
+/* HEADER  */
+.container-fluid .nav_logo span, .container-fluid .nav_logo p{
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  .container-fluid .nav_logo i{
+    color: rgb(0,159,77);
+    
+  }
+  
+  .container-fluid .nav_logo a {
+    text-decoration: none;
+    text-align: center;
+    
+    }
+  .container-fluid .nav_logo p{
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  
+  .header_right .header_search .search_button i{
+    background-color: rgb(0,159,77);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    margin-right: 20px;
+  }
+  /* FIXED HEADER CSS */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .main_header{
+    transition: all 0.5s;
+  }
+  .sticky.main_header{
+  background-color: white;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .sticky .container-fluid .nav_logo span, .sticky .container-fluid .nav_logo p, .sticky .navbar-nav .nav-item .nav-link{
+    color:black;
+  }
+  
+  .theme .fa-moon, .theme .fa-sun{
+    color: white;
+    transition: all 0.5s;
+  }
+  .sticky .theme .fa-moon,.sticky .theme .fa-sun{
+    color: #000;
+  }
+  
+  
+  /* SWITCH THEME CSS */
+  #myBody {
+    background-color: white;
+  }
+  
+  /* Dark Theme*/
+  .theme{
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme .theme_switch{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+  }
+  
+  .theme_switch input{
+    display: none;
+  }
+  
+  .mode_container{
+    width: 24px;
+    height: 24px;
+    padding: 1px 0;
+  
+  }
+  
+  /* Light theme */
+  #myBody {
+    background-color: white;
+  }
+  .mode_container .fa-sun{
+    display: none;
+  }
+  
+  .mode_container .fa-moon{
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody {
+    background-color: black;
+  }
+  .dark .fa-sun{
+    display: block;
+  }
+  
+  .dark .fa-moon{
+    display: none;
+  }
