@@ -6,6 +6,14 @@
 body{
     font-family: 'Jost', sans-serif;
 }
+a{
+  text-decoration: none;
+}
+.main_title{
+  color: #3F3A64;
+  font-weight: 700;
+  font-size: 40px;
+}
 /* HEADER  */
 .container-fluid .nav_logo span, .container-fluid .nav_logo p{
     color: white;
@@ -126,3 +134,352 @@ body{
   .dark .fa-moon{
     display: none;
   }
+  header{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+  }
+  /* BANNER  */
+  .banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+  }
+  .banner_content h1{
+    font-size: 45px;
+    margin-top: 50px;
+  }
+  .banner_content p{
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+  }
+  .banner_overlay{
+    background-color: rgba(29, 42, 55, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  /* INTRODUCE  */
+  .introduce{
+    background-color: #F7F7F7;
+  }
+  .introduce_title p{
+    opacity: 0.8;
+  }
+  .introduce_item .introduce_top,  .introduce_item .introduce_bot {
+    display: flex;
+    gap: 30px;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+  }
+  .introduce_top .introduce_content, .introduce_top .introduce_img, .introduce_bot .introduce_content, .introduce_bot .introduce_img {
+    width: 50%;
+  }
+  .introduce_top .introduce_content, .introduce_bot .introduce_content {
+    padding: 45px 50px;
+     box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%); ;
+  }
+  .introduce_top .introduce_content button, .introduce_bot .introduce_content button {
+    padding: 10px 40px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid green;
+    margin-top: 15px;
+    transition: all 0.5s;
+  }
+  .introduce_top .introduce_content button:hover, .introduce_bot .introduce_content button:hover{
+    background-color: rgb(16, 107, 16);
+  }
+  .introduce_top .introduce_content h4, .introduce_bot .introduce_content h4{
+    font-size: 25px;
+  }
+  /* INDUSTRIES  */
+ .industries{
+  background-color: white;
+ }
+  .industries_content .industries_top, .industries_content .industries_bot{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+;
+    
+  }
+  .industries_content .industries_item{
+    padding: 45px 35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+    margin: 20px;
+    background-color: #F8F9FA;
+  }
+  .industries_content .industries_item i{
+    font-size: 38px;
+    width: 40%;
+    color: green;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .industries_content .industries_item .industries_text h4 a{
+    color: #3f3a64;
+    display: block;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    letter-spacing: 0;
+    transition: all 0.5s;
+  
+  }
+  .industries_content .industries_item .industries_text h4 a:hover{
+    color: green;
+
+  }
+  .industries_content .industries_item .industries_text p{
+    font-size: 18px;
+  }
+  /* INNOVATIVE */
+  .innovative{
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+  }
+  .innovative::before{
+    content: "";
+    background-color: rgba(29, 42, 55, 0.7);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  /* INNOVATIVE */
+  .innovative_content{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 20px; */
+  }
+  .innovative_contactitem{
+    display: flex;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+    padding: 30px 0;
+  }
+  .innovative_contactitem .icon_contactitem{
+    font-size: 35px;
+    color: white;
+    margin: 0 20px;
+    
+  }
+  .innovative_contactitem .content_contactitem h6{
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+  }
+  .innovative_contactitem .content_contactitem p{
+    color: #eee;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .innovative_contactitem .content_contactitem p a{
+    color: #eee;
+  }
+  .innovative_right .innovative_form{
+    background-color: white;
+    padding: 72px;
+    border-radius: 8px;
+  }
+  .innovative_right .innovative_form h2{
+    color: #3F3A64;
+  font-weight: 700;
+  }
+  .innovative_right .innovative_form .innovative_input input{
+    background-color: #f7f7f7;
+    height: 50px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #666;
+    padding: 12px 25px;
+  }
+  .innovative_right .innovative_form .innovative_input textarea{
+    background-color: #f7f7f7;
+    height: 50px;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #666;
+    padding: 12px 25px;
+    min-height: 100px;
+  }
+  .innovative_right .innovative_form button{
+    padding: 10px 40px;
+    background-color: rgb(15, 181, 15);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .innovative_right .innovative_form button:hover{
+    background-color: green;
+  }
+  /* CRAFTED  */
+  .crafted_content{
+    display: flex;
+    text-align: center;
+  }
+.crafted_item{
+  box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+  padding: 40px 30px;
+  margin: 0 20px;
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+.crafted_item:hover{
+  transform: translateY(-15px);
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;;
+
+}
+.crafted_item .crafted_text a h6{
+  color:#3F3A64 ;
+  font-weight:700;
+  font-size: 20px;
+  margin: 20px 0;
+  transition: all 0.5s;
+}
+.crafted_item .crafted_text a:hover h6{
+  color: green;
+}
+  /* FOOTER  */
+  footer{
+    background-color: #151421;
+}
+  .footer_body{
+    border-top: 1px solid rgba(128, 128, 128, 0.459);
+}
+.footer_body_content{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
+.footer_item{
+    padding-right: 20px;
+}
+.footer_body_content .footer_item h6{
+    color: white;
+    font-size: 20px;
+    
+}
+.footer_item .footer_logo{
+    margin: 30px 0;
+}
+.footer_item .footer_logo a{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer_item .footer_logo i{
+    color: green;
+    margin-right: 5px;
+    vertical-align: bottom;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer_item .footer_logo span{
+    display: block;
+    font-size: 13px;
+    padding-left: 40px;
+}
+.footer_item .footer_content{
+    font-size: 18px;
+}
+.footer_item p, .footer_item ul li a{
+    font-size: 18px;
+}
+.footer_item .footer_body_icon i{
+    padding-right: 20px;
+    color: #7D858E;
+    transition: all 0.5s;
+}
+.footer_item .footer_body_icon i:hover{
+    color: white;
+}
+.footer_item ul{
+    margin-left: -30px;
+}
+.footer_item ul li{
+    margin-bottom: 10px;
+}
+.footer_item p a{
+  color: #97a1a9;
+    opacity: 0.7;
+    transition: all 0.5s;
+}
+.footer_item p a:hover{
+    color: white;
+    opacity: 1;
+}
+.footer_item ul a{
+  color: #97a1a9;
+    transition: all 0.5s;
+}
+.footer_item ul a:hover{
+    color: white;
+}
+.footer_copyright{
+    border-top: 1px solid rgba(128, 128, 128, 0.459);
+}
+.footer_copyright p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.footer_copyright p a{
+    color: green;
+    transition: all 0.5s;
+}
+.footer_copyright p a:hover{
+    color: white;
+}
+.backToTop{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    display: block;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.backToTop i{
+    color: white;
+}
