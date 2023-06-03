@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blog Post</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- FONT GOOGLE  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body id="myBody">
+    <header>
+      <header id="site_header" class="main_header">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <!-- LOGO -->
+              <div class="nav_logo">
+                <a href="#">
+                  <i class="fa fa-align-right fs-3"></i>
+                  <span class="fs-2 fw-bold">Corp Vision</span>
+                  <p class="logo fw-bold">Vision to your Future</p>
+                </a>
+              </div>
+              <!-- NAVIGATION -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navba.r-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-flex-end"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="#"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text fw-bold" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text fw-bold" href="#">SERVICES</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link text fw-bold dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      PAGES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                      <li><a class="dropdown-item" href="#">404 PAFE</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">LANDING PAGE </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text fw-bold" href="#">CONTACT</a>
+                  </li>
+                </ul>
+                <!-- Right items: search icon and dark mode  -->
+                <div class="header_right d-flex">
+                  <div class="header_search">
+                    <div class="search_button">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                  </div>
+                  <!-- full screen form controls -->
+                  <!-- <i class='icon-close fa fa-close material-icons'></i>
+                        <form action="https://wp.w3layouts.com/corpvision/" method="GET" class='search-input'>
+                        <input class='input-search' name="s" placeholder='Start Typing' type='text'>
+                        </form> -->
+                  <div class="theme">
+                    <label class="theme_switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="mode_container">
+                        <i class="fa-regular fa-moon fs-3"></i>
+                        <i class="fa-regular fa-sun fs-4"></i>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- Place navbar here -->
+      </header>
+    </header>
+    <main>
+      <!-- BANNER  -->
+      <section class="banner py-5">
+        <div class="container py-lg-5 py-md-4">
+          <div class="banner_content pt-md-5 pt-4 text-center">
+            <h1 class="text-white fw-bold">Blog Posts</h1>
+            <p>Find all our latest news, insights, and events</p>
+          </div>
+          <div class="banner_overlay"></div>
+        </div>
+      </section>
+      <!-- BLOG POST  -->
+      <div class="blog_post my-5">
+        <div class="container">
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="blog_content py-5">
+                <div class="blog_top row">
+                  <div class="blog_item card col">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/blog1.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Startup Business</p>
+                        <h4>Hello World!</h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="blog_item card col">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/blog2.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Startup Business</p>
+                        <h4>
+                          Companies in NY launched a joint project on a
+                          three-tower hall
+                        </h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="blog_item card col">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/blog3.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Marketing Strategy</p>
+                        <h4>
+                          Design breakthrough upgrades the product and ready to
+                          launch
+                        </h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="blog_bot row">
+                  <div class="blog_item card col">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/b3.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Web development</p>
+                        <h4>
+                          The fledgling company builds its business around AC
+                          motors
+                        </h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="blog_item card col">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/blog5.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Startup Business</p>
+                        <h4>
+                          Business opportunity in developing a reliable electric
+                          motor.
+                        </h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="blog_item card col">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/blog4.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Marketing Strategy</p>
+                        <h4>
+                          How to start a profitable home-based business within
+                          mins?
+                        </h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="blog_content py-5">
+                <div class="blog_top row">
+                  <div class="blog_item card col-4">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/b4.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Web development</p>
+                        <h4>
+                          Simple Business Solutions has generated thousands of
+                          dollars
+                        </h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="blog_item card col-4">
+                    <a href="#">
+                      <div class="card_top">
+                        <img
+                          src="./img/bg1-2048x1365.jpg"
+                          class="card-img-top"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="card-body">
+                        <p class="text-secondary">Web development</p>
+                        <h4>Hello World!</h4>
+                      </div>
+                      <div class="card_footer py-2">
+                        <p class="text-end pe-4 text-secondary">
+                          April 1, 2021
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="nav nav-pills mb-3 justify-content-center"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                1
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                2
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER  -->
+    <footer>
+      <div class="footer_body">
+        <div class="container">
+          <div class="footer_body_content my-5">
+            <div class="footer_item col-lg-4 col-md-6 px-3">
+              <div class="footer_logo my-4">
+                <a href="#">
+                  <i class="fa-solid fa-align-right"></i>
+                  Corp Vision <span>Vision to your Future</span>
+                </a>
+              </div>
+              <div class="footer_content text-secondary">
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                ultrices in ligula. Semper at <br />
+                tempufddfel. Lorem ipsum dolor sit amet Semper at <br />
+                elit team advisors.
+              </div>
+              <div class="footer_body_icon py-4">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="footer_item col-lg-4 col-md-6 ps-5">
+              <h6 class="my-4">CONTACT INFO</h6>
+              <p class="text-secondary">
+                Address : Corp Vision, 343 marketing, #21 <br />
+                cravel 1st lane street, NY - 62617.
+              </p>
+              <p class="text-secondary">
+                Phone Number: <a href="tel:+1(21) 234 4567"> +1(21) 234 4567</a>
+              </p>
+              <p class="text-secondary">
+                Email: <a href="mailto:info@example.com">info@example.com</a>
+              </p>
+              <p class="text-secondary">
+                Support <a href="mailto:info@support.com">info@support.com</a>
+              </p>
+            </div>
+            <div class="footer_item col-lg-2 col-md-6 col-sm-5 col-6">
+              <h6 class="my-4">CATEGORIES</h6>
+              <ul>
+                <li><a href="#">Marketing Strategy</a></li>
+                <li><a href="#">Startup Business</a></li>
+                <li><a href="#">Web development</a></li>
+              </ul>
+            </div>
+            <div class="footer_item col-lg-2 col-md-6 col-sm-5 col-6">
+              <h6 class="my-4">META</h6>
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Entries feed</a></li>
+                <li><a href="#">Comments feed</a></li>
+                <li><a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copyright py-3">
+        <div class="container">
+          <p class="text-secondary text-center">
+            © 2023 Corp Vision All Rights Reserved | WordPres Theme by
+            <a href="#">Cybersoft</a>
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="#"
+        class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+      >
+        <i class="fa-solid fa-angle-up"></i>
+      </a>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fixed header -->
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("site_header");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+    <!-- SWITCH THEME -->
+    <script>
+      document.getElementById("checkbox").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
+    </script>
+  </body>
+</html>
