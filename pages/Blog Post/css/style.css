@@ -9,6 +9,7 @@ body{
 a{
   text-decoration: none;
 }
+
 .main_title{
   color: #3F3A64;
   font-weight: 700;
@@ -174,16 +175,15 @@ a{
     z-index: -1;
   }
   /* BLOG  */
-  .blog_content{
-    
-}
-.blog_item{
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
-    padding: 0;
-}
+  .blog_item .card{
+      border: none;
+      display: flex;
+      flex-direction: column;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
+      padding: 0;
+  }
 .blog_content .card-body h4{
     color: #3F3A64;
     font-weight: 700;
@@ -313,4 +313,15 @@ a{
 }
 .backToTop i{
     color: white;
+}
+
+/* PANIGATION */
+.panigation .container {
+  margin-top: 20px;
+}
+.panigation .page {
+  display: none;
+}
+.panigation .page-active {
+  display: block;
 }
