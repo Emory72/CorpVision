@@ -180,19 +180,16 @@ a{
   .introduce_title p{
     opacity: 0.8;
   }
-  .introduce_item .introduce_top,  .introduce_item .introduce_bot {
-    display: flex;
-    gap: 30px;
-    /* margin-right: -15px;
-    margin-left: -15px; */
-  }
-  .introduce_top .introduce_content, .introduce_top .introduce_img, .introduce_bot .introduce_content, .introduce_bot .introduce_img {
-    width: 50%;
-  }
   .introduce_top .introduce_content, .introduce_bot .introduce_content {
     padding: 45px 50px;
      box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+     height: 100%;
   }
+  /* .introduce_top .introduce_content {
+    max-width: calc(50% - 1.5rem);
+    margin-right: 1.5rem;
+  } */
+  
   .introduce_top .introduce_content button, .introduce_bot .introduce_content button {
     padding: 10px 40px;
     background-color: green;
@@ -207,21 +204,14 @@ a{
   }
   .introduce_top .introduce_content h4, .introduce_bot .introduce_content h4{
     font-size: 25px;
+
   }
   /* INDUSTRIES  */
  .industries{
   background-color: white;
  }
-  .industries_content .industries_top, .industries_content .industries_bot{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-;
-    
-  }
-  .industries_content .industries_item{
+
+  .industries_content .industries_item-content {
     padding: 30px;
     position: relative;
     z-index: 1;
@@ -230,7 +220,7 @@ a{
     grid-auto-flow: column;
     grid-gap: 20px;
     box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
-    margin: 20px;
+    
     background-color: #F8F9FA;
   }
   .industries_content .industries_item i{
@@ -244,7 +234,7 @@ a{
     color: #3f3a64;
     display: block;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.2;
     margin-bottom: 15px;
     font-size: 22px;
     letter-spacing: 0;
@@ -354,7 +344,7 @@ a{
     display: flex;
     text-align: center;
   }
-.crafted_item{
+  .crafted_content-item{
   box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
   padding: 40px 30px;
   margin: 0 20px;
