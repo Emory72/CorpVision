@@ -18,7 +18,18 @@ a{
 li{
     list-style: none;
 }
-
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card{
+  border: none;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+}
 
 /* HEADER CSS */
 .container-fluid .nav_logo span, .container-fluid .nav_logo p{
@@ -389,6 +400,7 @@ header .main_header{
 .gallery_item{
     position: relative;
     overflow: hidden;
+   
 }
 .gallery_content .gallery_item .gallery_overlay{
     position: absolute;
@@ -445,18 +457,19 @@ header .main_header{
 .gallery_logo .logo_content .logo_item{
     padding: 0 50px;
 }
+
 /* SUCCESS  */
 .success_content{
     display: flex;
 }
 .success_content .success_left{
-    width: 50%;
+    
 }
 .success_content .success_left img{
     border-radius: 20px;
 }
 .success_content .success_right{
-    width: 50%;
+   
     padding-left: 30px;
 }
 .success_right .success_title{
@@ -607,6 +620,7 @@ header .main_header{
     display: flex;
     justify-content: space-between;
 }
+
 .news_content .card-body h4{
     color: #3F3A64;
     font-weight: 700;
