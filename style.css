@@ -87,7 +87,9 @@ background-color: white;
 box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-.sticky .container-fluid .nav_logo span, .sticky .container-fluid .nav_logo p, .sticky .navbar-nav .nav-item .nav-link{
+.sticky .container-fluid .nav_logo span, 
+.sticky .container-fluid .nav_logo p, 
+.sticky .navbar-nav .nav-item .nav-link{
   color:black;
 }
 
@@ -156,7 +158,9 @@ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   background-color: #000;
 }
 
-.dark .sticky .container-fluid .nav_logo span, .sticky .container-fluid .nav_logo p, .sticky .navbar-nav .nav-item .nav-link{
+.dark .sticky .container-fluid .nav_logo span, 
+.dark .sticky .container-fluid .nav_logo p, 
+.dark .sticky .navbar-nav .nav-item .nav-link{
   color:white;
   opacity: .9;
 }
@@ -249,6 +253,10 @@ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 {
   color:white;
 }
+
+/* .dark footer {
+  background-color: #000;
+} */
 
 /* BANNER CAROUSEL CSS */
 header{
