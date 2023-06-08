@@ -154,6 +154,7 @@ body.search-active .search-input {
 }
 
 .main_header{
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   transition: all 0.5s;
 }
 .sticky.main_header{
