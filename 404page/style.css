@@ -55,6 +55,7 @@
 }
 
 .main_header{
+  border-bottom: 1px solid rgba(212, 209, 209, 0.129);
   transition: all 0.5s;
 }
 .sticky.main_header{
