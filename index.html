@@ -97,23 +97,19 @@
                 </li>
               </ul>
               <!-- Right items: search icon and dark mode  -->
-              <div class="header_right d-flex">
-                <div class="header_search">              
-                  <div class="btn search_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fa-solid fa-magnifying-glass "></i>
-                  </div>
-    
-                  
+              
+              <div class="header-search HeaderSearch">
+                <div class='control mr-3'>
+                <div class='btn-material'>
+                  <i class='fa fa-search icon-material-search'></i>
+                </div>
                 </div>
                 <!-- full screen form controls -->
-                <!-- Modal -->
-                  <div class="modal animate__animated animate__zoomIn bg-success" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                   
-                  </div>
-                  
-
-
-
+                <i class='icon-close fa fa-close material-icons'></i>
+                <form action="https://wp.w3layouts.com/corpvision/" method="GET" class='search-input'>
+                <input class='input-search' placeholder='Start Typing' type='text'>
+                </form>
+              </div>
 
 
                 <!-- sun moon icon -->
@@ -852,6 +848,19 @@
     <!-- BACKTOTOP  -->
     <script src="./JS/back-to-top-master/assets/js/main.js"></script>
     <script src="./JS/back-to-top-master/assets/js/util.js"></script>
+
+
+    <!-- Search -->
+    <script>
+      $('.control').click(function () {
+        $('body').addClass('search-active');
+        $('.input-search').focus();
+      });
+    
+      $('.icon-close').click(function () {
+        $('body').removeClass('search-active');
+      });
+    </script>
     
   </body>
 </html>
