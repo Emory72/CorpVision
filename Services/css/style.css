@@ -67,6 +67,7 @@ a{
 }
 
 .main_header{
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   transition: all 0.5s;
 }
 .sticky.main_header{
@@ -74,9 +75,11 @@ background-color: white;
 box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-.sticky .container-fluid .nav_logo span, .sticky .container-fluid .nav_logo p,.sticky .navbar-nav .nav-item .nav-link {
-  color: #3f3a64;
- }
+.sticky .container-fluid .nav_logo span, 
+.sticky .container-fluid .nav_logo p, 
+.sticky .navbar-nav .nav-item .nav-link{
+  color:black;
+}
 
 .theme .fa-moon, .theme .fa-sun{
   color: white;
@@ -94,7 +97,6 @@ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 #myBody {
   background-color: white;
 }
-
 
 /* Dark Theme*/
 .theme{
@@ -119,6 +121,82 @@ box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 
 }
 
+/* Light theme */
+#myBody {
+  background-color: white;
+}
+.mode_container .fa-sun{
+  display: none;
+}
+
+.mode_container .fa-moon{
+  display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+  background-color: black;
+}
+.dark .fa-sun{
+  display: block;
+}
+
+.dark .fa-moon{
+  display: none;
+}
+/* DARK STICKY MENU  */
+.dark .sticky.main_header{
+  background-color: #000;
+}
+
+.dark .sticky .container-fluid .nav_logo span, 
+.dark .sticky .container-fluid .nav_logo p, 
+.dark .sticky .navbar-nav .nav-item .nav-link{
+  color:white;
+  opacity: .9;
+}
+
+.dark .sticky .theme .fa-moon,.sticky .theme .fa-sun{
+  color: white;
+  opacity: .9;
+}
+.dark .shape path {
+  fill: #000;
+}
+/* DARK SERVICES  */
+.dark .introduce, .dark .crafted{
+  background-color: black;
+}
+.dark .introduce .introduce_content, .dark .crafted .crafted_content-item{
+  background-color: #151421;
+}
+.dark .introduce .introduce_content h4, .dark .crafted .crafted_content-item h6{
+  color: white;
+} 
+.dark .introduce .introduce_title h2, .dark .crafted .crafted_title h2{
+  color: white;
+}
+.dark .industries{
+  background-color: #151421;
+}
+.dark .industries .industries_title h2{
+  color: white;
+}
+.dark .industries .industries_item-content{
+  background-color: black;
+}
+.dark .industries .industries_item-content .industries_text h4 a{
+  color: white;
+}
+.dark .innovative .innovative_form{
+  background-color: #151421;
+}
+.dark .innovative .innovative_form form h2{
+  color: white ;
+}
+.dark .innovative .innovative_form form input, .dark .innovative .innovative_form form textarea {
+  background-color: black;
+}
   header{
     position: absolute;
     top:0;
