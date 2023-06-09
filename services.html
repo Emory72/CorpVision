@@ -31,108 +31,103 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- ANIMATION CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./Services/css/style.css" />
   </head>
 
   <body id="myBody">
-    <header>
-      <header id="site_header" class="main_header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <!-- LOGO -->
-              <div class="nav_logo">
-                <a href="#">
-                  <i class="fa fa-align-right fs-3"></i>
-                  <span class="fs-2 fw-bold">Corp Vision</span>
-                  <p class="logo fw-bold">Vision to your Future</p>
-                </a>
-              </div>
-              <!-- NAVIGATION -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navba.r-toggler-icon"></span>
-              </button>
-              <div
-                class="collapse navbar-collapse justify-content-flex-end"
-                id="navbarSupportedContent"
-              >
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link fw-bold"
-                      aria-current="page"
-                      href="./index.html"
-                      >HOME</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text fw-bold" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text fw-bold" href="./services.html">SERVICES</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link text fw-bold dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      PAGES
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./blogpost.html">BLOG POSTS</a></li>
-                      <li><a class="dropdown-item" href="#">404 PAFE</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">LANDING PAGE </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text fw-bold" href="./contact.html">CONTACT</a>
-                  </li>
-                </ul>
-                <!-- Right items: search icon and dark mode  -->
-                <div class="header_right d-flex">
-                  <div class="header_search">
-                    <div class="search_button">
-                      <i class="fa-solid fa-magnifying-glass"></i>
+    <header id="site_header" class="main_header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- LOGO -->
+            <div class="nav_logo">
+              <a href="#">
+                <i class="fa fa-align-right fs-3"></i>
+                <span class="fs-2 fw-bold">Corp Vision</span>
+                <p class="logo fw-bold">Vision to your Future</p>
+              </a>
+            </div>
+            <!-- NAVIGATION -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navba.r-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-flex-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text fw-bold" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text fw-bold" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link text fw-bold dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                    <li><a class="dropdown-item" href="#">404 PAFE</a></li>
+                    <li><a class="dropdown-item" href="#">LANDING PAGE </a></li>
+                    <li><a class="dropdown-item" href="#">ELEMENTS PAGE</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text fw-bold" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <!-- Right items: search icon and dark mode  -->
+              <div class="header_right d-flex">
+                <div class="header_search">
+                  <div class="search_button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+                <!-- full screen form controls -->
+                <!-- <i class='icon-close fa fa-close material-icons'></i>
+                  <form action="https://wp.w3layouts.com/corpvision/" method="GET" class='search-input'>
+                  <input class='input-search' name="s" placeholder='Start Typing' type='text'>
+                  </form> -->
+                <div class="theme">
+                  <label class="theme_switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="mode_container">
+                      <i class="fa-regular fa-moon fs-3"></i>
+                      <i class="fa-regular fa-sun fs-4"></i>
                     </div>
-                  </div>
-                  <!-- full screen form controls -->
-                  <!-- <i class='icon-close fa fa-close material-icons'></i>
-                    <form action="https://wp.w3layouts.com/corpvision/" method="GET" class='search-input'>
-                    <input class='input-search' name="s" placeholder='Start Typing' type='text'>
-                    </form> -->
-                  <div class="theme">
-                    <label class="theme_switch" for="checkbox">
-                      <input type="checkbox" id="checkbox" />
-                      <div class="mode_container">
-                        <i class="fa-regular fa-moon fs-3"></i>
-                        <i class="fa-regular fa-sun fs-4"></i>
-                      </div>
-                    </label>
-                  </div>
+                  </label>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-        <!-- Place navbar here -->
-      </header>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- BANNER  -->
@@ -205,7 +200,6 @@
               </div>
             </div>
           </div>
-          
         </div>
       </section>
       <!-- INDUSTRIES  -->
@@ -509,6 +503,7 @@
         <i class="fa-solid fa-angle-up"></i>
       </a>
     </footer>
+    <!-- Bootstrap JavaScript Libraries -->
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
