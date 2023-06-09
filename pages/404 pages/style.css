@@ -410,3 +410,89 @@ footer{
     opacity: 0.9;
   }
 
+    /* SEARCH POP UP CSS */
+.control {
+  cursor: pointer;
+}
+body.search-active .control{
+  cursor: default;
+}
+
+.control .btn-material {
+  background-color: rgb(0,159,77);
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  margin-right: 20px;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.search-active .control .btn-material {
+    transform: scale(70);
+}
+
+body.search-active .control .icon-material-search{
+  opacity: 0;
+}
+
+.control .icon-material-search {
+  color: #FFF;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.header-search .icon-close{
+  position: absolute;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 70px;
+  opacity: 0;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+
+body.search-active .header-search  .icon-close{
+  opacity:1;
+  transform: rotate(-90deg);
+
+}
+
+.search-input {
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  margin-top: -40px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: all 0.3s ease-in-out;
+  width: 88%;
+  
+}
+
+body.search-active .search-input {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+
+.search-input input {
+  color: white !important;
+  font-size: 54px;
+  border: none;
+  background: transparent;
+  outline: 0;
+  font-weight: 200;
+  height: 100vh;
+  width: 100%;
+}
+
+
