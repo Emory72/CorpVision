@@ -1,7 +1,9 @@
 *{
   font-family: 'Jost', sans-serif;
 }
-
+a{
+  text-decoration: none;
+}
 /* HEADER CSS */
 .container-fluid .nav_logo span, .container-fluid .nav_logo p{
   color: white;
@@ -55,6 +57,7 @@
 }
 
 .main_header{
+  border-bottom: 1px solid rgba(231, 231, 231, 0.18);
   transition: all 0.5s;
 }
 .sticky.main_header{
@@ -154,7 +157,17 @@ header{
 .about_page .about_company .about_left img{
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
-
+.about_company .about_left .bg-shape{
+  border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
+  -webkit-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
+  width: 500px;
+    height: 500px;
+    background-color: #009f4d;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
 .about_company .about_left .imginfo_box{
   background-color: #009f4d;
   color: white;
@@ -312,7 +325,15 @@ div#small-dialog iframe {
   background-color: #f8f9fa;
   
   }
-
+  .about_feature .feature_item .item_text a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+  }
+  .about_feature .feature_item .item_text a:hover{
+    
+    color: green;
+  }
   .about_feature .feature_item .item_icon{
     width: 40px;
     margin-right: 25px;
