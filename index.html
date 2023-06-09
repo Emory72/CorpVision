@@ -53,6 +53,7 @@
     <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./style.css" />
   </head>
+  
   <body id="myBody">
     <header id="site_header" class=" main_header ">
       <div class="container">
@@ -97,19 +98,22 @@
                 </li>
               </ul>
               <!-- Right items: search icon and dark mode  -->
-              <div class="header_right d-flex">
-                <div class="header_search">              
-                  <div class="search_button">
-                    <i class="fa-solid fa-magnifying-glass "></i>
-                  </div>
-    
-                  
+              
+              <div class="header-search HeaderSearch">
+                <div class='control mr-3'>
+                <div class='btn-material'>
+                  <i class='fa fa-search icon-material-search'></i>
+                </div>
                 </div>
                 <!-- full screen form controls -->
-                  <!-- <i class='icon-close fa fa-close material-icons'></i>
-                  <form action="https://wp.w3layouts.com/corpvision/" method="GET" class='search-input'>
-                  <input class='input-search' name="s" placeholder='Start Typing' type='text'>
-                  </form> -->
+                <i class='icon-close fa fa-close material-icons'></i>
+                <form action="https://wp.w3layouts.com/corpvision/" method="GET" class='search-input'>
+                <input class='input-search' placeholder='Start Typing' type='text'>
+                </form>
+              </div>
+
+
+                <!-- sun moon icon -->
                 <div class="theme">
                   <label class="theme_switch" for="checkbox">
                     <input type="checkbox" id="checkbox">
@@ -681,7 +685,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer >
       <div class="footer_header text-center">
         <div class="container">
           <div class="footer_header_title">
@@ -845,6 +849,19 @@
     <!-- BACKTOTOP  -->
     <script src="./JS/back-to-top-master/assets/js/main.js"></script>
     <script src="./JS/back-to-top-master/assets/js/util.js"></script>
+
+
+    <!-- Search -->
+    <script>
+      $('.control').click(function () {
+        $('body').addClass('search-active');
+        $('.input-search').focus();
+      });
+    
+      $('.icon-close').click(function () {
+        $('body').removeClass('search-active');
+      });
+    </script>
     
   </body>
 </html>
