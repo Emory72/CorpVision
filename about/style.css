@@ -230,7 +230,7 @@ header{
   line-height: 18px;
   font-weight: bold;
   margin-right: 30px;
-  
+  transition: all 0.5s;
 }
 .about_company .about_right button:hover{
   background-color: #00732c;
