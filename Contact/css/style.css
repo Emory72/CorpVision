@@ -500,3 +500,12 @@ body.search-active .search-input {
 
 
 
+@media only screen and (max-width: 991px)
+.main-header {
+    height: auto;
+    padding: 20px 0;
+}
+
+header.active {
+  background: rgba(0, 0, 0, 0.7);
+}
