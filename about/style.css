@@ -908,7 +908,7 @@ body.search-active .header-search  .icon-close{
 body.search-active .search-input {
   opacity: 1;
   transform: none;
-  pointer-events: all;
+  pointer-events: allgit;
 }
 
 .search-input input {
