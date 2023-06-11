@@ -997,3 +997,7 @@ footer{
 .backToTop i{
     color: white;
 }
+
+header.active {
+  background: rgba(0, 0, 0, 0.7);
+}
